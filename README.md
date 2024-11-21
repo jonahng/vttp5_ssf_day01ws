@@ -21,7 +21,7 @@ mvn spring-boot:run -Dserver.port=3000
 • mvn spring-boot:run -Dspring-boot.run.arguments=--port=3000
 <space>--logLevel=TRACE”
 
-
+mvn spring-boot:run -Dspring-boot.run.arguments=“--port=3000 --logLevel=TRACE”
 
 
 
