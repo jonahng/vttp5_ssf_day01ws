@@ -19,8 +19,7 @@ COPY .mvn .mvn
 #.mvn is a hidden folder that contains necessary things to run maven.
 
 #Package the application using the RUN directive and download the dependencies in POM.xml, then compile into jar
-CMD ["chmod", "+x", "./mvnw"]
-RUN ./mvnw package -Dmaven.test.skip=true
+RUN chmod a+x ./mvnw && ./mvnw clean package -Dmaven.test.skip=true
 
 ENV SERVER_PORT 3000
 
